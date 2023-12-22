@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,700;1,100;1,
+        400&family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://kit.fontawesome.com/f4c1e5f645.js" crossorigin="anonymous"></script>>
+    <link rel="stylesheet" href="tailwindcss.css">
+
+</head>
+
+<body class="font-sans h-full bg-black text-white scroll-smooth">
+    <div class="hero h-screen relative text-center" style="background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/bckg1.jpg); background-position: center; background-size: cover;">
+        <nav class="nav flex items-center justify-between p-5">
+            <h2 class="logo md:text-4xl font-bold cursor-pointer ">
+                Samuel<span class="text-blue-300"> Tenagne</span>
+            </h2>
+            <ul class="flex space-x-4 lg:space-x-8" id="nav">
+                <li><a href="#" class="text-white hidden lg:inline">HOME</a></li>
+                <li><a href="#about" class="text-white hidden lg:inline">ABOUT ME</a></li>
+                <li><a href="#skills" class="text-white hidden lg:inline">SKILLS</a></li>
+                <li><a href="#projects" class="text-white hidden lg:inline">PROJECTS</a></li>
+                <li><a href="#contact" class="text-white hidden lg:inline">CONTACT ME</a></li>
+            </ul>
+        </nav>
+        <div class="absolute top-0 right-0 md:hidden sm:block sm:mt-4 mr-4" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+        <section>
+            <div class="content md:absolute ml-16 -mb-20 sm:top-1/3 sm:right-1/3 sm: m-auto">
+                <br><br>
+                <h4 class="text-white text-2xl">Hi There, My Name is</h4>
+                <h1 class="text-white text-6xl mb-4">Samuel <span class="text-blue-400">Tenagne</span></h1>
+                <h3 class="text-white text-2xl">I'm a Web <span class="text-cyan">Developer</span></h3>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about py-12 bg-gray-900 text-white w-full">
+        <div class="container mx-auto flex flex-col md:flex-row items-center text-center">
+            <img src="img/about me.png" alt="" class="w-full md:w-1/2 md:mr-8 rounded-lg mb-8 md:mb-0">
+            <div class="about-text md:w-1/2">
+                <h2 class="md:text-3xl md:mb-4 text-center">About <span>Me</span></h2>
+                <h5 class="md:text-3xl mb-6 text-center"><span class="text-blue-300">Developer</span> <span class="text-blue-300">content creator</span>  and <span class="text-blue-300">Video editor</span></h5>
+                <p class="md:text-base mb-8 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora atque culpa
+                    rerum adipisci quia odio, delectus repellat ex eaque eius quod excepturi repudiandae. Ex voluptatem
+                    assumenda rerum eum, totam recusandae cupiditate tenetur ipsam autem fugit eos voluptas doloribus
+                    voluptatibus in! Necessitatibus dolores sapiente volup tatem, magnam officia vero exercitationem
+                    magni sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora atque culpa rerum
+                    adipisci quia odio, delectus repellat ex eaque eius quod excepturi repudiandae. Ex voluptatem
+                    assumenda rerum eum, totam recusandae cupiditate tenetur ipsam autem fugit eos voluptas doloribus
+                    voluptatibus in! Necessitatibus dolores sapiente volup?</p>
+            <a href="#contact" class="bg-blue-400 text-white list-none border-2 bg-transparent hover:scale-50 p-5 mt-7 mb-7 inline-block ">Let's talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="w-full skills py-12 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl mb-12">My <span class="text-blue-300">Skills</span></h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="skills-col w-full md:w-1/3 px-4 mb-8">
+                    <img src="img/web development.jpg" alt="" class="w-full h-64 object-cover rounded-lg mb-4 hover:shadow-lg">
+                    <h5 class="text-xl mb-2">Web Development</h5>
+                    <p class="text-base mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+                        quibusdam iusto, et, sit, nesciunt at atque fugiat soluta ipsum eligendi cupiditate obcaecati iste
+                        quaerat quas reprehenderit eum a. Ad, dicta!</p>
+                    <a href="https://en.wikipedia.org/wiki/Andrew_Tate" target="_blank" class="bg-blue-300 text-white list-none border-2 bg-transparent hover:scale-50 p-5 mt-7 mb-7 inline-block">Read More</a>
+                </div>
+                <div class="skills-col w-full md:w-1/3 px-4 mb-8">
+                    <img src="img/content creation.jpg" alt=""
+                        class="w-full h-64 object-cover rounded-lg mb-4 hover:shadow-lg">
+                    <h5 class="text-xl mb-2">Content Creation</h5>
+                    <p class="text-base mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+                        quibusdam iusto, et, sit, nesciunt at atque fugiat soluta ipsum eligendi cupiditate obcaecati iste
+                        quaerat quas reprehenderit eum a. Ad, dicta!</p>
+                    <a href="https://en.wikipedia.org/wiki/Andrew_Tate" target="_blank" class="bg-blue-400 text-white list-none border-2 bg-transparent hover:scale-50 p-5 mt-7 mb-7 inline-block ">Read More</a>
+                </div>
+                <div class="skills-col w-full md:w-1/3 px-4 mb-8">
+                    <img src="img/video editing.jpg" alt=""
+                        class="w-full h-64 object-cover rounded-lg mb-4 hover:shadow-lg"w-full h-64 object-cover rounded-lg mb-4 hover:shadow-lgVideo Editing</img>
+                    <p class="text-base mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+                        quibusdam iusto, et, sit, nesciunt at atque fugiat soluta ipsum eligendi cupiditate obcaecati iste
+                        quaerat quas reprehenderit eum a. Ad, dicta!</p>
+                    <a href="https://en.wikipedia.org/wiki/Andrew_Tate" target="_blank" class="bg-blue-300 text-white list-none border-2 bg-transparent hover:scale-110 p-5 mt-7 mb-7 mt-7 inline-block ">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="w-full projects py-12 bg-gray-900 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl mb-12">My <span class="text-blue-300">Projects</span></h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="project-col w-full md:w-1/3 px-4 mb-8">
+                    <img src="img/websites.jpg" alt="" class="w-full h-64 object-cover rounded-lg mb-4 hover:shadow-lg">
+                    <h5 class="text-xl mb-2">Websites</h5>
+                    <p class="text-base mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+                        quibusdam iusto, et, sit, nesciunt at atque fugiat soluta ipsum eligendi cupiditate obcaecati iste
+                        quaerat quas reprehenderit eum a. Ad, dicta!</p>
+                    <a href="https://en.wikipedia.org/wiki/Andrew_Tate" target="_blank" class="bg-blue-300 text-white list-none border-2 bg-transparent hover:scale-50 p-5 mt-7 mb-7 inline-block ">Read More</a>
+                </div>
+                <div class="project-col w-full md:w-1/3 px-4 mb-8">
+                    <img src="img/professionalvideo.jpg" alt="" class="w-full h-64 object-cover rounded-lg mb-4 hover:shadow-lg">
+                    <h5 class="text-xl mb-2">Professional videos</h5>
+                    <p class="text-base mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+                        quibusdam iusto, et, sit, nesciunt at atque fugiat soluta ipsum eligendi cupiditate obcaecati iste
+                        quaerat quas reprehenderit eum a. Ad, dicta!</p>
+                    <a href="https://en.wikipedia.org/wiki/Andrew_Tate" target="_blank" class="bg-blue-300 text-white list-none border-2 bg-transparent hover:scale-50 p-5 mt-7 mb-7 inline-block ">Read More</a>
+                </div>
+                <div class="project-col w-full md:w-1/3 px-4 mb-8">
+                    <img src="img/youtubechannel.jpg" alt="" class="w-full h-64 object-cover rounded-lg mb-4 hover:shadow-lg">
+                    <h5 class="text-xl mb-2">Successful youtube channel</h5>
+                    <p class="text-base mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+                        quibusdam iusto, et, sit, nesciunt at atque fugiat soluta ipsum eligendi cupiditate obcaecati iste
+                        quaerat quas reprehenderit eum a. Ad, dicta!</p>
+                    <a href="https://en.wikipedia.org/wiki/Andrew_Tate" target="_blank" class="bg-blue-300 text-white list-none border-2 bg-transparent hover:scale-50 p-5 mt-7 mb-7 inline-block ">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class=" w-fullcontact py-16 bg-gray-800 text-white flex flex-col items-center w-full" style="background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/bckg2.jpg); background-position: center; background-size: cover;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl mb-12">Contact <span class="text-blue-300">Me</span></h2>
+            <form action="#" method="POST" class="max-w-2xl mx-auto contact-form">
+                <div class="flex flex-col md:flex-col -mx-4 mb-16">
+                    <div class="w-full px-4 mb-4 form-group">
+                        <label for="name" class="text-white text-lg mb-4">Your Name</label>
+                        <input type="text" name="name" id="name"
+                            class="w-full p-4 border border-gray-600 rounded focus:outline-none focus:border-cyan">
+                    </div>
+                    <div class="w-full px-4 mb-4 form-group">
+                        <label for="email" class="text-white text-lg mb-4">Your Email</label>
+                        <input type="email" name="email" id="email" 
+                            class="w-full p-4 border border-gray-600 rounded focus:outline-none focus:border-cyan">
+                    </div>
+                    <div class="w-full  px-4 mb-4 form-group">
+                        <label for="contact" class="text-white text-lg mb-4">Your Message</label>
+                        <input type="text" name="contact" id="contact"
+                            class="w-full p-10 border border-gray-600 rounded focus:outline-none focus:border-cyan">
+                    </div>
+                </div>
+                <button type="submit" class="bg-blue-400 text-white list-none border-2 bg-transparent hover:scale-50 p-5 mt-7 mb-7 inline-block button md:w-auto">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-white text-center" id="icons">
+        <div class="social-icons mb-4">
+            <a href="#" class="icon-link hover:opacity-75 text-base">
+                <i class="fab fa-facebook text-blue-300 text-2xl"></i>
+            </a>
+            <a href="#" class="icon-link hover:opacity-75 mr-4 text-base">
+                <i class="fab fa-twitter-in text-blue-300 text-2xl"></i>
+            </a>
+            <a href="#" class="icon-link hover:opacity-75 mr-4 text-base">
+                <i class="fab fa-linkedin text-blue-300 text-2xl"></i>
+            </a>
+            <a href="#" class="icon-link hover:opacity-75 mr-4 text-base">
+                <i class="fab fa-instagram text-blue-300 text-2xl"></i>
+            </a>
+            <a href="#" class="icon-link hover:opacity-75 mr-4 text-base">
+                <i class="fab fa-telegram text-blue-300 text-2xl"></i>
+            </a>
+        </div>
+        <ul class="nav-links flex justify-center space-x-4 lg:space-x-8 text-blue-400" id="navlink">
+            <li><a href="#" class="text-white hover:text-cyan">HOME</a></li>
+            <li><a href="#about" class="text-white hover:text-cyan">ABOUT ME</a></li>
+            <li><a href="#skills" class="text-white hover:text-cyan">SKILLS</a></li>
+            <li><a href="#projects" class="text-white hover:text-cyan">PROJECTS</a></li>
+            <li><a href="#contact" class="text-white hover:text-cyan">CONTACT ME</a></li>
+        </ul>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
